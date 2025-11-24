@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cybergrid 2048</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="glow-background"></div>
+  <div class="container">
+    <header class="header">
+      <div>
+        <h1>Cybergrid 2048</h1>
+        <p class="tagline">Merge your way through neon circuitry.</p>
+      </div>
+      <div class="controls">
+        <div class="score-panel">
+          <div class="score-block">
+            <div class="label">Score</div>
+            <div id="score" class="value">0</div>
+          </div>
+          <div class="score-block">
+            <div class="label">Best</div>
+            <div id="best" class="value">0</div>
+          </div>
+        </div>
+        <button id="new-game" class="button primary">New Game</button>
+      </div>
+    </header>
+
+    <section class="board-wrapper">
+      <div class="hint">Use your arrow keys or swipe to combine tiles.</div>
+      <div id="board" class="board" aria-label="2048 game board" role="application"></div>
+      <div id="message" class="message hidden" role="status"></div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
